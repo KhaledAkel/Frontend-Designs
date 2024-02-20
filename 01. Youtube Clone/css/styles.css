@@ -66,15 +66,17 @@ header #center-header form
 }
 header #center-header input
 {
-    width: 500px;
+    width: 536px;
     height: 40px;
     border: 1px solid #ccc;
     border-radius: 40px 0 0 40px;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 header #center-header input::placeholder 
 {
-    font-size: 15px;
+    font-size: 16px;
+    color: #888888;
+    font-weight: 400;
 
 
 }
@@ -89,10 +91,15 @@ header #center-header button
     border: 1px solid #ccc;
     border-radius: 0 40px 40px 0;
     background-color: #f8f8f8;
+    margin-left: -2px;
+}
+header #center-header button .search
+{
+    font-size: 24px;
 }
 header #center-header .mic
 {
-    font-size: 25px;
+    font-size: 24px;
     margin-left: 10px;
     background-color: #E4E4E4;
     padding: 8px;
@@ -112,7 +119,7 @@ header #right-header
 }
 header #right-header .video, .notifications
 {
-    font-size: 25px;
+    font-size: 24px;
     margin-right: 10px;
     background-color: #FFFFFF;
     padding: 8px;
@@ -127,11 +134,36 @@ header #right-header .video:hover, .notifications:hover
 }
 header #right-header .account
 {
-    font-size: 25px;
+    font-size: 24px;
     background-color: #E4E4E4;
     margin-right: 10px;
     margin-left: 5px;
     padding: 8px;
     cursor: pointer;
     border-radius: 50%;
+}
+
+
+
+
+#main-content #left-nav-bar
+{
+    width: 76px;
+    height: calc(100vh - 56px);
+    background-color: white;
+}
+#main-content #left-nav-bar a
+{
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0px 14px;
+
+}
+#main-content #left-nav-bar a i
+{
+    font-size: 24px;
 }
