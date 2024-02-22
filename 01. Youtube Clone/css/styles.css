@@ -200,7 +200,7 @@ header #right-header .account
 {
     width: calc(100vw - 76px);
     height: calc(100vh - 56px);
-    background-color: aqua;
+    background-color: white;
 }
 
 #main-content #right-section #tags-bar
@@ -211,7 +211,7 @@ header #right-header .account
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    overflow-x: scroll;
+    overflow: hidden;
     padding: 3px 10px;
     scroll-behavior: auto;
     scrollbar-width: none;
@@ -225,4 +225,52 @@ header #right-header .account
     padding: 12px 12px;
     background-color: #F1F1F1;
     border-radius: 15px;
+}
+
+#main-content #right-section #display-videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#main-content #right-section #display-videos .window{
+    width: 320px;
+    height: 260px;
+    margin-bottom: 20px;
+
+}
+#main-content #right-section #display-videos .window .thumbnail
+{
+    width: 100%;
+    height: 190px;
+    margin-bottom: 7px;
+}
+#main-content #right-section #display-videos .window .thumbnail img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 5px 5px;
+}
+#main-content #right-section #display-videos .window .video-info
+{
+    height: 70;
+    display: flex;
+    padding: 3px;
+}
+#main-content #right-section #display-videos .window .video-info .creator
+{
+    height: 100%;
+    width: 36px;
+    margin-right: 10px;
+}
+#main-content #right-section #display-videos .window .video-info .creator img
+{
+    width: 100%;
+    border-radius: 50%;
+}
+
+#main-content #right-section #display-videos .window .video-info h3, p
+{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
